@@ -4,27 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <div class="wrapper">
-        <div>
-          <a href="/"><img src="" alt="" /></a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="">asdasdasd</a></li>
-            <li><a href="">asd</a></li>
-            <li><a href="">asd</a></li>
-            <li><a href="">asd</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">MUO</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li class="services">
+              <a href="/">Services</a>
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><a href="/">Dropdown 1 </a></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 3</a></li>
+                <li><a href="/">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="/">Pricing</a></li>
+            <li><a href="/">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
     </header>
     <main>
-      <section>
-        <div></div>
+      <!-- SECTION-IMAGE -->
+      <section class="section-image">
+        <div class="content">
+          <h1 class="heading">
+            <span class="small">Bienvenido a la tienda de ropa</span>
+            <span class="no-fill">ECMA</span>
+          </h1>
+          <a class="btn" href="">Contactenos</a>
+        </div>
       </section>
     </main>
   </body>

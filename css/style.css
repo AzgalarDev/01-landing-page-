@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+main {
+  background-color: #F1F1F1;
+}
 body {
 }
 a {
@@ -12,17 +15,32 @@ a {
 ul {
   list-style: none;
 }
+h2 {
+  text-align: center;
+  padding: 40px 0;
+  font-style: italic;
+  font-size: 30px;
+  
+}
+.icon {
+  text-align: center;
+}
+.icon > a { 
+  font-size: 50px;
+  color: black;
+}
 /* navbar styling starts */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: teal;
-  color: #fff;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-bottom: #E4C6A2 3px solid;
 }
 .nav-links a {
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 /* logo */
 .logo {
@@ -35,7 +53,7 @@ ul {
   font-size: 18px;
 }
 .menu li:hover {
-  background-color: #4c9e9e;
+  background-color: #E4C6A2;
   border-radius: 5px;
   transition: 0.3s ease;
 }
@@ -47,7 +65,7 @@ ul {
   position: relative;
 }
 .dropdown {
-  background-color: rgb(1, 139, 139);
+  background-color: #E4C6A2;
   padding: 1em 0;
   position: absolute; /*WITH RESPECT TO PARENT*/
   display: none;
@@ -61,9 +79,10 @@ ul {
   padding: 0.5em 1em;
   width: 8em;
   text-align: center;
+  border-bottom: #000 1px solid;
 }
 .dropdown li:hover {
-  background-color: #4c9e9e;
+  background-color: white;
 }
 .services:hover .dropdown {
   display: block;
@@ -84,7 +103,7 @@ input[type="checkbox"] {
   .menu {
     display: none;
     position: absolute;
-    background-color: teal;
+    background-color: #E4C6A2;
     right: 0;
     left: 0;
     text-align: center;
@@ -92,8 +111,9 @@ input[type="checkbox"] {
   }
   .menu li:hover {
     display: inline-block;
-    background-color: #4c9e9e;
+    background-color: white;
     transition: 0.3s ease;
+    
   }
   .menu li + li {
     margin-top: 12px;
@@ -110,16 +130,16 @@ input[type="checkbox"] {
     transform: translateX(35%);
   }
   .dropdown li:hover {
-    background-color: #4c9e9e;
+    background-color: white;
   }
 }
 
 /* section header image */
 .section-image {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   height: calc(100vh - 60px);
-  background: url(/assets/imageropa.webp);
+  background: url("/assets/imageropa.webp");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -140,13 +160,15 @@ input[type="checkbox"] {
 
 .heading .small {
   display: block;
-  font-size: 40px;
+  font-style: italic;
+  color: transparent;
+  -webkit-text-stroke: 3px #fabb6e;
 }
 
 .heading .no-fill {
   font-style: italic;
   color: transparent;
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 3px #fabb6e;
 }
 
 .btn {
@@ -163,7 +185,7 @@ input[type="checkbox"] {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  margin: 20px 0 80px;
+  margin: 60px auto 80px auto;
   gap: 25px;
 }
 .card {
@@ -190,8 +212,8 @@ input[type="checkbox"] {
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(0, 176, 155, 0.5),
-    rgba(150, 201, 61, 1)
+    rgba(0, 176, 155, 0.3),
+    rgba(228, 198, 162, 1)
   );
   z-index: 2;
   transition: 0.5s all;
@@ -326,6 +348,22 @@ input[type="checkbox"] {
   /* grid-column: 5 / span 4; */
   /* grid-row: 6 / span 3; */
 }
+/*
+.text-card {
+ display: flex;
+ flex-direction: row !important;
+ flex-wrap: wrap;
+ align-items: center;
+ margin: 0 40px;
+}
+.T {
+  display: flex;
+ flex-direction: row !important;
+ flex-wrap: wrap;
+ align-items: center;
+ margin: 0 17px;
+}
+*/
 
 /*.stories-one { 
     grid-area: 1 / 1 / 2 / 2;   
